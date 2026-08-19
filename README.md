@@ -47,7 +47,7 @@ plt.show()
 
 ```
 
-image = cv2.imread('1.jpesg') 
+image = cv2.imread('Mara12.jpeg') 
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 img_rgb.shape
 line_img = cv2.line(img_rgb, (0, 0), (735, 1103), (255, 0, 0), 15) # cv2.line(image, start_point, end_point, color, thickness)
@@ -62,7 +62,7 @@ plt.show()
 
 ```
 
-image = cv2.imread('1.jpeg') 
+image = cv2.imread('Mara12.jpeg') 
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 img_rgb.shape
 circle_img = cv2.circle(img_rgb,(368, 471),150,(0,0,0),20) # cv2.circle(image, center, radius, color, thickness)
@@ -77,7 +77,7 @@ plt.show()
 
 ```
 
-image = cv2.imread('1.jpg') 
+image = cv2.imread('Mara12.jpeg') 
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 img.shape
 rectangle_img = cv2.rectangle(img_rgb, (0, 0),(736, 1104), (255, 0, 0), 20)  # cv2.rectangle(image, start_point, end_point, color, thickness)
@@ -88,11 +88,11 @@ plt.show()
 
 ```
 
-5) Add the text "NAVEEN V" at the top-left corner of the image.
+5) Add the text "VISHVA S" at the top-left corner of the image.
 
 ```
 
-image = cv2.imread('1.jpeg') 
+image = cv2.imread('Mara12.jpeg') 
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 text_img = cv2.putText(img_rgb, "NAVEEN V", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 5)  ## cv2.putText(image, text, position, font, font_scale, color, thickness)
 plt.imshow(text_img, cmap='viridis')  
@@ -106,7 +106,7 @@ plt.show()
 
 ```
 
-image = cv2.imread('1.jpeg')
+image = cv2.imread('Mara12.jpeg')
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 plt.imshow(image_rgb)
 plt.title("Original RGB Image")
@@ -173,7 +173,7 @@ plt.show()
 
 ```
 
-image = cv2.imread('1.jpeg') 
+image = cv2.imread('Mara12.jpeg') 
 image.shape
 resized_image = cv2.resize(image, (736 // 2, 1104 // 2))
 resized_image_rgb = cv2.cvtColor(resized_image, cv2.COLOR_BGR2RGB)
@@ -188,7 +188,7 @@ plt.show()
 
 ```
 
-image = cv2.imread('1.jpeg') 
+image = cv2.imread('Mara12.jpeg') 
 image.shape
 roi = image[50:350, 50:350]
 roi_rgb = cv2.cvtColor(roi, cv2.COLOR_BGR2RGB)
@@ -202,7 +202,7 @@ plt.show()
 
 ```
 
-image = cv2.imread('1.jpeg')
+image = cv2.imread('Mara12.jpeg')
 flipped_horizontally = cv2.flip(image, 1)
 flipped_horizontally_rgb = cv2.cvtColor(flipped_horizontally, cv2.COLOR_BGR2RGB)
 plt.imshow(flipped_horizontally_rgb)
